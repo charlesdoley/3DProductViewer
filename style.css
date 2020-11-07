@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  max-height: 100vh;
+  overflow: hidden;
+  perspective: 1000px;
+}
+.card {
+  transform-style: preserve-3d;
+  min-height: 50vh;
+  width: 250px;
+  border-radius: 15px;
+  padding: 1rem 15px ;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.sneaker {
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sneaker img {
+  width: 100px;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+.circle{
+  width: 120px;
+  height: 120px;
+  background-color: #d9c933;
+  background: linear-gradient(
+    to right,
+    rgba(255,224,0, .75),
+    rgba(121,159,12, 0.75)
+  );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.circle1 {
+  background: linear-gradient(
+    to right,
+    rgba(241,39,17, 0.75),
+    rgba(245,175,25, 0.75)
+  );
+}
+.circle2 {
+  background: linear-gradient(
+    to right,
+    rgba(53,92,125, 0.75),
+    rgba(108,91,123, 0.75),
+    rgba(192,108,132, 0.75)
+  );
+}
+.circle3{
+  background: linear-gradient(
+    to right,
+    rgba(253,252,71, 0.75),
+    rgba(36,254,65, 0.75)
+  );
+}
+
+
+.info h1 {
+  font-size: 16px;
+  transition: all 0.75s ease-out;
+}
+.info h3 {
+  font-size: 14px;
+  padding: 10px 0rem;
+  color: #585858;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+.sizes {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.75s ease-out;
+}
+.sizes button {
+  padding: 5px 10px;
+  background: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: bold;
+  color: #585858;
+}
+button.active {
+  background: #585858;
+  color: white;
+}
+.purchase {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  transition: all 0.75s ease-out;
+}
+.purchase button {
+  width: 100%;
+  padding: 10px 0rem;
+  background: #f54642;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
+}
+
+.purchase2 button{
+  background: rgba(206, 209, 8, 0.75);
+}
+
+.purchase3 button{
+  background: rgba(36,254,65,0.75);
+}
+
+.purchase4 button{
+  background: rgba(108,91,123,0.75);
+}
+
+.swiper-slide {
+  height: 100vh !important;
+  width: 100vw;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
