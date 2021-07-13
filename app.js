@@ -18,17 +18,18 @@ Array.from(containerList).map((container)=> {
     description,
     sizes
   }
-
-  container.addEventListener("mousemove", (e) => mouseMove(containerObject));
+  container.addEventListener("mousemove", e =>{
+    mouseMove(containerObject,e);
+  });
   container.addEventListener("mouseenter", (e) => mouseEnter(containerObject));
   container.addEventListener("mouseleave", () => mouseLeave(containerObject));
 })
 
 //Animate Out
-const mouseMove = ({card}) => {
+const mouseMove = (containerObject, e) => {
   let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
   let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
-  card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+  containerObject.card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 }
 //Popout
 const mouseEnter = ({card,title,sneaker,description,sizes,purchase}) => {
